@@ -1,7 +1,7 @@
 obj-m += krwx.o
 
 
-K=<KERNEL-PATH>
+K=$(KERNEL_PATH)
 
 all:
 	make -C $K M=$(PWD) modules
